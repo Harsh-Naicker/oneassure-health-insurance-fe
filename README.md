@@ -5,7 +5,8 @@ This is the frontend repository of the SDE hiring asignment administered by OneA
 [https://oneassure-health-insurance-fe-demo.onrender.com/](https://oneassure-health-insurance-fe-demo.onrender.com/)
 
 ## Installation steps
-Use node version 18+
+Clone the repository in your local system.
+Switch to node version 18+
 In the root directory run: `npm install --force`
 
 ## Available Scripts
