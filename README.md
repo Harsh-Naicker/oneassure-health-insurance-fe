@@ -9,6 +9,9 @@ Clone the repository in your local system.
 Switch to node version 18+
 In the root directory run: `npm install --force`
 
+## Project highlights
+All the forms present across pages are server driven i.e. the backend service dictates what fields are to be rendered and how.
+
 ## Available Scripts
 
 In the project directory, you can run:
