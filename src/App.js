@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import * as React from 'react'
 import './App.css';
+import UserRegistration from './pages/UserRegistration';
+import UserLogin from './pages/UserLogin';
+import PremiumRateInquiry from './pages/PremiumRateInquiry';
+import PlanPurchaseSummary from './pages/PlanPurchaseSummary';
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
+  let navigation = useNavigate();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Routes>
+        <Route path="/" element={<UserRegistration navigation={navigation} />} />
+        <Route path="/login/" element={<UserLogin navigation={navigation} />} />
+        <Route path="/home/" element={<PremiumRateInquiry navigation={navigation} />} />
+        <Route path="/purchase-summary/" element={<PlanPurchaseSummary navigation={navigation} />} />
+      </Routes>
+    </React.Fragment>
   );
 }
 
