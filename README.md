@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# OneAssure Fullstack SDE Hiring Assignment
+This is the frontend repository of the SDE hiring asignment administered by OneAssure.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deployed Website
+[https://oneassure-health-insurance-fe-demo.onrender.com/](https://oneassure-health-insurance-fe-demo.onrender.com/)
+
+## Installation steps
+Use node version 18+
+In the root directory run: `npm install --force`
 
 ## Available Scripts
 
