@@ -13,15 +13,16 @@ const UserRegistration = (props) => {
     }, [])
 
     const checkIfUserLoggedIn = async () => {
-        const response = await apiService.checkIsUserLoggedIn();
-        if (response.status === 200) {
-            console.log("response: ", response)
-            if (response.data.is_logged_in) {
-                props.navigation("/home/")
-                return
+        if (localStorage.getItem('access_token')) {
+            const response = await apiService.checkIsUserLoggedIn();
+            if (response.status === 200) {
+                console.log("response: ", response)
+                if (response.data.is_logged_in) {
+                    props.navigation("/home/")
+                    return
+                }
             }
         }
-
         getFormConfig();
     }
 
