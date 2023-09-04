@@ -8,6 +8,9 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
   let navigation = useNavigate();
+  React.useEffect(() => {
+    document.title = 'OneAssure-Mock'
+  }, [])
   return (
     <React.Fragment>
       <Routes>

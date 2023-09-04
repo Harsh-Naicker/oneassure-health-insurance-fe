@@ -7,7 +7,8 @@ let headers = {
 };
 
 const api_client = axios.create({
-    baseURL: 'https://oneassure-health-insurance-demo.onrender.com/',
+    // baseURL: 'https://oneassure-health-insurance-demo.onrender.com/',
+    baseURL: 'http://127.0.0.1:5000/',
     headers: headers,
     timeout: 5000,
 })
